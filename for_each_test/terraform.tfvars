@@ -3,6 +3,7 @@
 
 sqs_names = [
   "bharath_test_one",
+  "bharath_test_one_again",
   "bharath_test_two",
   "bharath_test_three",
   "bharath_test_four",
