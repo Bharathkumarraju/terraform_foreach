@@ -4,7 +4,7 @@ on:
     branches:
       - master
     paths:
-      - 'for_each_test/**'
+      - 'for_each_test/**.tf'
 jobs:
   test_foreach:
     runs-on: ubuntu-latest
