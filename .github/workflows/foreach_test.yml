@@ -1,4 +1,4 @@
-name: deploy ecs cluster
+name: test for_each
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
     paths:
       - 'for_each_test/**.tf'
 jobs:
-  deploy-ecs-cluster-service:
+  test_foreach:
     runs-on: ubuntu-latest
     steps:
 
