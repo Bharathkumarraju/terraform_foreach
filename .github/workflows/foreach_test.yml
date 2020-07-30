@@ -17,7 +17,7 @@ jobs:
         run: wget `echo "https://releases.hashicorp.com/terraform/$(curl -s https://checkpoint-api.hashicorp.com/v1/check/terraform | jq -r -M '.current_version')/terraform_$(curl -s https://checkpoint-api.hashicorp.com/v1/check/terraform | jq -r -M '.current_version')_linux_amd64.zip"`  && unzip *.zip && sudo mv terraform /usr/bin/terraform
 
       - name: Init and plan and apply terraform
-        run: /usr/bin/terraform init -input=false  && /usr/bin/terraform plan -input=false
+        run: /usr/bin/terraform init -input=false  && /usr/bin/terraform plan -input=false && /usr/bin/terraform apply -input=false -auto-approve
         working-directory: ./for_each_test/
         env:
           TF_IN_AUTOMATION: true
