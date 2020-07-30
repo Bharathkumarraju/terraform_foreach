@@ -1,5 +1,5 @@
 #define the variables in the variables.tf file
-aws_region = "ap-southeast-1"
+#aws_region = "ap-southeast-1"
 
 sqs_names = [
   "bharath_test_one",
