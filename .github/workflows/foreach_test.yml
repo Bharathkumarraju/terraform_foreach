@@ -18,7 +18,7 @@ jobs:
 
       - name: Init and plan and apply terraform
         run: /usr/bin/terraform init -input=false  && /usr/bin/terraform plan -input=false
-        working-directory: .
+        working-directory: ./for_each_test/
         env:
           TF_IN_AUTOMATION: true
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
