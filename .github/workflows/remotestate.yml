@@ -4,7 +4,7 @@ on:
     branches:
       - master
     paths:
-      - 'remote_state/**'
+      - 'remote_state/**.tf'
 jobs:
   deploy-tf-remote-state:
     runs-on: ubuntu-latest
